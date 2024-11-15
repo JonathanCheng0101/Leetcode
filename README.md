@@ -19,4 +19,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0584-find-customer-referee](https://github.com/JonathanCheng0101/Leetcode/tree/master/0584-find-customer-referee) |
 | [0595-big-countries](https://github.com/JonathanCheng0101/Leetcode/tree/master/0595-big-countries) |
 | [1258-article-views-i](https://github.com/JonathanCheng0101/Leetcode/tree/master/1258-article-views-i) |
+## Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->
