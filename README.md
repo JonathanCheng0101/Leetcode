@@ -13,4 +13,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/JonathanCheng0101/Leetcode/tree/master/0022-generate-parentheses) |
+## Database
+|  |
+| ------- |
+| [0584-find-customer-referee](https://github.com/JonathanCheng0101/Leetcode/tree/master/0584-find-customer-referee) |
 <!---LeetCode Topics End-->
