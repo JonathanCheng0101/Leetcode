@@ -43,4 +43,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0100-same-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/JonathanCheng0101/Leetcode/tree/master/0001-two-sum) |
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/JonathanCheng0101/Leetcode/tree/master/0001-two-sum) |
 <!---LeetCode Topics End-->
