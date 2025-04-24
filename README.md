@@ -47,13 +47,19 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/JonathanCheng0101/Leetcode/tree/master/0001-two-sum) |
+| [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/JonathanCheng0101/Leetcode/tree/master/0238-product-of-array-except-self) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/JonathanCheng0101/Leetcode/tree/master/0001-two-sum) |
+| [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
 ## Prefix Sum
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/JonathanCheng0101/Leetcode/tree/master/0238-product-of-array-except-self) |
+## Sorting
+|  |
+| ------- |
+| [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
 <!---LeetCode Topics End-->
