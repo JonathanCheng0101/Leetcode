@@ -52,11 +52,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/JonathanCheng0101/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/JonathanCheng0101/Leetcode/tree/master/0238-product-of-array-except-self) |
+| [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/JonathanCheng0101/Leetcode/tree/master/0001-two-sum) |
 | [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
+| [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -65,13 +67,23 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
+| [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 ## Binary Search
 |  |
 | ------- |
 | [0035-search-insert-position](https://github.com/JonathanCheng0101/Leetcode/tree/master/0035-search-insert-position) |
+| [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/JonathanCheng0101/Leetcode/tree/master/0278-first-bad-version) |
 ## Interactive
 |  |
 | ------- |
 | [0278-first-bad-version](https://github.com/JonathanCheng0101/Leetcode/tree/master/0278-first-bad-version) |
+## Math
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 <!---LeetCode Topics End-->
