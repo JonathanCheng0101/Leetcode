@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/JonathanCheng0101/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
+| [1066-fixed-point](https://github.com/JonathanCheng0101/Leetcode/tree/master/1066-fixed-point) |
 ## Hash Table
 |  |
 | ------- |
@@ -78,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/JonathanCheng0101/Leetcode/tree/master/0278-first-bad-version) |
 | [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
+| [1066-fixed-point](https://github.com/JonathanCheng0101/Leetcode/tree/master/1066-fixed-point) |
 ## Interactive
 |  |
 | ------- |
