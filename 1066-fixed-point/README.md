@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/fixed-point">1066. Fixed Point</a></h2><h3>Easy</h3><hr><p>Given an array of distinct integers <code>arr</code>, where <code>arr</code> is sorted in <strong>ascending order</strong>, return the smallest index <code>i</code> that satisfies <code>arr[i] == i</code>. If there is no such index, return <code>-1</code>.</p>
+<h2><a href="https://leetcode.com/problems/fixed-point">Fixed Point</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Given an array of distinct integers <code>arr</code>, where <code>arr</code> is sorted in <strong>ascending order</strong>, return the smallest index <code>i</code> that satisfies <code>arr[i] == i</code>. If there is no such index, return <code>-1</code>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
