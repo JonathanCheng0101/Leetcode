@@ -53,12 +53,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/JonathanCheng0101/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
+| [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/JonathanCheng0101/Leetcode/tree/master/0001-two-sum) |
 | [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
+| [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -68,12 +70,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
+| [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 ## Binary Search
 |  |
 | ------- |
 | [0035-search-insert-position](https://github.com/JonathanCheng0101/Leetcode/tree/master/0035-search-insert-position) |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/JonathanCheng0101/Leetcode/tree/master/0278-first-bad-version) |
+| [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 ## Interactive
 |  |
 | ------- |
@@ -86,4 +90,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
+## Two Pointers
+|  |
+| ------- |
+| [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 <!---LeetCode Topics End-->
