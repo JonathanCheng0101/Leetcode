@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/JonathanCheng0101/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/JonathanCheng0101/Leetcode/tree/master/0022-generate-parentheses) |
 | [0125-valid-palindrome](https://github.com/JonathanCheng0101/Leetcode/tree/master/0125-valid-palindrome) |
+| [0242-valid-anagram](https://github.com/JonathanCheng0101/Leetcode/tree/master/0242-valid-anagram) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/JonathanCheng0101/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 ## Dynamic Programming
 |  |
@@ -73,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/JonathanCheng0101/Leetcode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/JonathanCheng0101/Leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/JonathanCheng0101/Leetcode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/JonathanCheng0101/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
@@ -85,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/JonathanCheng0101/Leetcode/tree/master/0015-3sum) |
 | [0217-contains-duplicate](https://github.com/JonathanCheng0101/Leetcode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/JonathanCheng0101/Leetcode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 ## Binary Search
