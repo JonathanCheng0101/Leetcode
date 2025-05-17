@@ -3,10 +3,16 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        slow = 0
-        for fast in range(len(nums)):
-            if nums[fast]!= 0:
-                nums[fast], nums[slow] = nums[slow], nums[fast]
-                slow += 1
+        # 若都不是0相安無事,碰到0 slow stays, fast goes
+        l = 0
+        for r in range(len(nums)):
+            if nums[r]: # none zero 的時候進行swap，l == r的時候swap也沒差
+                nums[l], nums[r] = nums[r], nums[l]
+
+                l += 1        
+        
+            
+
+            
 
         
