@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/JonathanCheng0101/Leetcode/tree/master/0022-generate-parentheses) |
 | [0125-valid-palindrome](https://github.com/JonathanCheng0101/Leetcode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/JonathanCheng0101/Leetcode/tree/master/0242-valid-anagram) |
+| [0392-is-subsequence](https://github.com/JonathanCheng0101/Leetcode/tree/master/0392-is-subsequence) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/JonathanCheng0101/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/JonathanCheng0101/Leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 ## Dynamic Programming
@@ -17,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0005-longest-palindromic-substring](https://github.com/JonathanCheng0101/Leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0022-generate-parentheses](https://github.com/JonathanCheng0101/Leetcode/tree/master/0022-generate-parentheses) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/JonathanCheng0101/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0392-is-subsequence](https://github.com/JonathanCheng0101/Leetcode/tree/master/0392-is-subsequence) |
 ## Backtracking
 |  |
 | ------- |
@@ -138,6 +140,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/JonathanCheng0101/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0283-move-zeroes](https://github.com/JonathanCheng0101/Leetcode/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
+| [0392-is-subsequence](https://github.com/JonathanCheng0101/Leetcode/tree/master/0392-is-subsequence) |
 | [0908-middle-of-the-linked-list](https://github.com/JonathanCheng0101/Leetcode/tree/master/0908-middle-of-the-linked-list) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/JonathanCheng0101/Leetcode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/JonathanCheng0101/Leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
