@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/JonathanCheng0101/Leetcode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/JonathanCheng0101/Leetcode/tree/master/0242-valid-anagram) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/JonathanCheng0101/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
+| [1146-greatest-common-divisor-of-strings](https://github.com/JonathanCheng0101/Leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -121,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
+| [1146-greatest-common-divisor-of-strings](https://github.com/JonathanCheng0101/Leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 ## Bit Manipulation
 |  |
 | ------- |
