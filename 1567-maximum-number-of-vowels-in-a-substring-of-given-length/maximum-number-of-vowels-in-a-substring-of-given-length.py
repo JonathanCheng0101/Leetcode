@@ -6,7 +6,8 @@ class Solution:
         for i in range(k):
             if s[i] in vowel_set:
                 curr += 1
-                res += 1
+            
+        res = curr
 
         for r in range(k, len(s)):
             if s[r] in vowel_set:
