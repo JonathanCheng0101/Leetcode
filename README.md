@@ -77,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1046-max-consecutive-ones-iii](https://github.com/JonathanCheng0101/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1066-fixed-point](https://github.com/JonathanCheng0101/Leetcode/tree/master/1066-fixed-point) |
 | [1319-unique-number-of-occurrences](https://github.com/JonathanCheng0101/Leetcode/tree/master/1319-unique-number-of-occurrences) |
+| [1528-kids-with-the-greatest-number-of-candies](https://github.com/JonathanCheng0101/Leetcode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/JonathanCheng0101/Leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/JonathanCheng0101/Leetcode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/JonathanCheng0101/Leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
