@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/JonathanCheng0101/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/JonathanCheng0101/Leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/JonathanCheng0101/Leetcode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
+| [1777-determine-if-two-strings-are-close](https://github.com/JonathanCheng0101/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -94,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/JonathanCheng0101/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [1319-unique-number-of-occurrences](https://github.com/JonathanCheng0101/Leetcode/tree/master/1319-unique-number-of-occurrences) |
+| [1777-determine-if-two-strings-are-close](https://github.com/JonathanCheng0101/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/JonathanCheng0101/Leetcode/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Prefix Sum
 |  |
@@ -109,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/JonathanCheng0101/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
+| [1777-determine-if-two-strings-are-close](https://github.com/JonathanCheng0101/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/JonathanCheng0101/Leetcode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/JonathanCheng0101/Leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
 ## Binary Search
@@ -188,6 +191,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/JonathanCheng0101/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [1777-determine-if-two-strings-are-close](https://github.com/JonathanCheng0101/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 ## Quickselect
 |  |
 | ------- |
