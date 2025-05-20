@@ -1,22 +1,26 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        l_mult = 1
-        r_mult = 1
+        mul1, mul2 = [], []
+        curr = 1
+        for num in nums:
+            
+            mul1.append(curr)
+            curr *= num
+        
 
-        n = len(nums)
+        curr = 1
+        for i in range(len(nums)-1, -1, -1):
+            
+            mul2.append(curr)
+            curr *= nums[i]
+        mul2.reverse()
+            
 
-        l_arr = [0] * n
-        r_arr = [0] * n
+        res = []
+        for i in range(len(nums)):
+            total_num = mul1[i] * mul2[i]
+            res.append(total_num)
 
-        for i in range(n):
-            j = -i - 1
-
-            l_arr[i] = l_mult
-            r_arr[j] = r_mult
-
-            l_mult *= nums[i]
-            r_mult *= nums[j]
-
-        return [l * r for l, r in zip(l_arr,r_arr)]
+        return res
 
         
