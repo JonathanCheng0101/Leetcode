@@ -212,4 +212,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0735-asteroid-collision](https://github.com/JonathanCheng0101/Leetcode/tree/master/0735-asteroid-collision) |
 | [2470-removing-stars-from-a-string](https://github.com/JonathanCheng0101/Leetcode/tree/master/2470-removing-stars-from-a-string) |
+## Design
+|  |
+| ------- |
+| [0969-number-of-recent-calls](https://github.com/JonathanCheng0101/Leetcode/tree/master/0969-number-of-recent-calls) |
+## Queue
+|  |
+| ------- |
+| [0969-number-of-recent-calls](https://github.com/JonathanCheng0101/Leetcode/tree/master/0969-number-of-recent-calls) |
+## Data Stream
+|  |
+| ------- |
+| [0969-number-of-recent-calls](https://github.com/JonathanCheng0101/Leetcode/tree/master/0969-number-of-recent-calls) |
 <!---LeetCode Topics End-->
