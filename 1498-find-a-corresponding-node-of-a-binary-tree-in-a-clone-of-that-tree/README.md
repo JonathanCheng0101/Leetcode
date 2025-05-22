@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree">1498. Find a Corresponding Node of a Binary Tree in a Clone of That Tree</a></h2><h3>Easy</h3><hr><p>Given two binary trees <code>original</code> and <code>cloned</code> and given a reference to a node <code>target</code> in the original tree.</p>
+<h2><a href="https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree">Find a Corresponding Node of a Binary Tree in a Clone of That Tree</a></h2> <img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' /><hr><p>Given two binary trees <code>original</code> and <code>cloned</code> and given a reference to a node <code>target</code> in the original tree.</p>
 
 <p>The <code>cloned</code> tree is a <strong>copy of</strong> the <code>original</code> tree.</p>
 
