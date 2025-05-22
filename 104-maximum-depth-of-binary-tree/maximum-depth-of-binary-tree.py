@@ -7,29 +7,27 @@
 from collections import deque
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
-        if not root:
-            return 0
-
-        return 1 + max(self.maxDepth(root.left),self.maxDepth(root.right))
-
-
-
-
-        """
-        if not root:
-            return 0
-
-        queue = deque([root])
         cnt = 0
-        while len(queue)>0:
-            cnt += 1    #確定有的再加
-            n = len(queue)
-            for _ in range(n):
-                node = queue.popleft()
-              
-                for child in [node.left, node.right]:
-                    if child is not None:
-                        queue.append(child)
+        if not root:
+            return cnt
+        
+        q = deque([root])
+        while q:
+            length = len(q)
+            for _ in range(length):
+                node = q.popleft()
 
-        return cnt"""
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+            
+            cnt += 1
+        
+        return cnt
+
+
+
+
+    
         
