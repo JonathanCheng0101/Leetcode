@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0404-sum-of-left-leaves](https://github.com/JonathanCheng0101/Leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [1005-univalued-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1005-univalued-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1609-find-all-the-lonely-nodes](https://github.com/JonathanCheng0101/Leetcode/tree/master/1609-find-all-the-lonely-nodes) |
 ## Depth-First Search
@@ -58,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0404-sum-of-left-leaves](https://github.com/JonathanCheng0101/Leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [1005-univalued-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1005-univalued-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1609-find-all-the-lonely-nodes](https://github.com/JonathanCheng0101/Leetcode/tree/master/1609-find-all-the-lonely-nodes) |
 ## Breadth-First Search
@@ -71,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0404-sum-of-left-leaves](https://github.com/JonathanCheng0101/Leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [1005-univalued-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1005-univalued-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1609-find-all-the-lonely-nodes](https://github.com/JonathanCheng0101/Leetcode/tree/master/1609-find-all-the-lonely-nodes) |
 ## Binary Tree
@@ -84,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0404-sum-of-left-leaves](https://github.com/JonathanCheng0101/Leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [1005-univalued-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1005-univalued-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1609-find-all-the-lonely-nodes](https://github.com/JonathanCheng0101/Leetcode/tree/master/1609-find-all-the-lonely-nodes) |
 ## Array
