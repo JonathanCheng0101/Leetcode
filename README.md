@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/JonathanCheng0101/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1609-find-all-the-lonely-nodes](https://github.com/JonathanCheng0101/Leetcode/tree/master/1609-find-all-the-lonely-nodes) |
 ## Depth-First Search
@@ -52,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/JonathanCheng0101/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1609-find-all-the-lonely-nodes](https://github.com/JonathanCheng0101/Leetcode/tree/master/1609-find-all-the-lonely-nodes) |
 ## Breadth-First Search
@@ -62,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/JonathanCheng0101/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1609-find-all-the-lonely-nodes](https://github.com/JonathanCheng0101/Leetcode/tree/master/1609-find-all-the-lonely-nodes) |
 ## Binary Tree
@@ -72,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/JonathanCheng0101/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1609-find-all-the-lonely-nodes](https://github.com/JonathanCheng0101/Leetcode/tree/master/1609-find-all-the-lonely-nodes) |
 ## Array
@@ -243,4 +247,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0969-number-of-recent-calls](https://github.com/JonathanCheng0101/Leetcode/tree/master/0969-number-of-recent-calls) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 <!---LeetCode Topics End-->
