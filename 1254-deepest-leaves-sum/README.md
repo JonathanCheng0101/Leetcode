@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/deepest-leaves-sum">1254. Deepest Leaves Sum</a></h2><h3>Medium</h3><hr>Given the <code>root</code> of a binary tree, return <em>the sum of values of its deepest leaves</em>.
+<h2><a href="https://leetcode.com/problems/deepest-leaves-sum">Deepest Leaves Sum</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr>Given the <code>root</code> of a binary tree, return <em>the sum of values of its deepest leaves</em>.
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2019/07/31/1483_ex1.png" style="width: 273px; height: 265px;" />
