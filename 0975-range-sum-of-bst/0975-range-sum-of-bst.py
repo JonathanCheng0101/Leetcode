@@ -4,12 +4,28 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
+from collections import deque
 class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
         total = 0
+        q = deque([root])
 
-        def dfs(node):
+        while q:
+            length = len(q)
+
+            for _ in range(length):
+                node = q.popleft()
+                if node.val >= low and node.val <= high:
+                    total += node.val
+
+
+                if node.left:
+                    q.append(node.left)
+                if node.right:
+                    q.append(node.right)
+        return total
+
+        """def dfs(node):
             nonlocal total
             if not node:
                 return
@@ -21,7 +37,7 @@ class Solution:
             
         
         dfs(root)
-        return total
+        return total"""
 
             
         
