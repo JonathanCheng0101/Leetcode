@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/JonathanCheng0101/Leetcode/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/JonathanCheng0101/Leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0242-valid-anagram](https://github.com/JonathanCheng0101/Leetcode/tree/master/0242-valid-anagram) |
+| [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0392-is-subsequence](https://github.com/JonathanCheng0101/Leetcode/tree/master/0392-is-subsequence) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/JonathanCheng0101/Leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0443-string-compression](https://github.com/JonathanCheng0101/Leetcode/tree/master/0443-string-compression) |
@@ -29,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/JonathanCheng0101/Leetcode/tree/master/0022-generate-parentheses) |
+| [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 ## Database
 |  |
 | ------- |
@@ -47,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/JonathanCheng0101/Leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/JonathanCheng0101/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+| [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0270-closest-binary-search-tree-value](https://github.com/JonathanCheng0101/Leetcode/tree/master/0270-closest-binary-search-tree-value) |
 | [0404-sum-of-left-leaves](https://github.com/JonathanCheng0101/Leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -74,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/JonathanCheng0101/Leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/JonathanCheng0101/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+| [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0270-closest-binary-search-tree-value](https://github.com/JonathanCheng0101/Leetcode/tree/master/0270-closest-binary-search-tree-value) |
 | [0404-sum-of-left-leaves](https://github.com/JonathanCheng0101/Leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -126,6 +130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0145-binary-tree-postorder-traversal](https://github.com/JonathanCheng0101/Leetcode/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/JonathanCheng0101/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
+| [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0270-closest-binary-search-tree-value](https://github.com/JonathanCheng0101/Leetcode/tree/master/0270-closest-binary-search-tree-value) |
 | [0404-sum-of-left-leaves](https://github.com/JonathanCheng0101/Leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
