@@ -7,26 +7,28 @@
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
         res = []
-        s = ""
 
-        def dfs(node):
-            nonlocal s
-            prev_len = len(s)
-            if node:
-                s += str(node.val)
-            else:
-                return
+        def dfs(node, path):
+            if not node:
+                return 
 
-            if node.left or node.right:
-                s += "->"
-            else:
-                res.append(s)
+            if not node.left and not node.right: # leaf node
+                path.append(str(node.val))
+                res.append("->".join(path))
+                path.pop()
+                return 
 
-            dfs(node.left)
-            dfs(node.right)
-            s = s[:prev_len]
+            # normal case
+            path.append(str(node.val))
+            dfs(node.left, path)
+            dfs(node.right, path)
+            path.pop()
+
+            
+        dfs(root, [])
+        return res
+
+
+
 
         
-        dfs(root)
-
-        return res
