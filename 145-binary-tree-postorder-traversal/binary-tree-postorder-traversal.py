@@ -6,13 +6,10 @@
 #         self.right = right
 class Solution:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        if not root:
-            return []
         
         res = []
 
         def dfs(node):
-            nonlocal res
             if not node:
                 return
 
