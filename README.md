@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0270-closest-binary-search-tree-value](https://github.com/JonathanCheng0101/Leetcode/tree/master/0270-closest-binary-search-tree-value) |
+| [0366-find-leaves-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0366-find-leaves-of-binary-tree) |
 | [0404-sum-of-left-leaves](https://github.com/JonathanCheng0101/Leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -86,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0270-closest-binary-search-tree-value](https://github.com/JonathanCheng0101/Leetcode/tree/master/0270-closest-binary-search-tree-value) |
+| [0366-find-leaves-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0366-find-leaves-of-binary-tree) |
 | [0404-sum-of-left-leaves](https://github.com/JonathanCheng0101/Leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
@@ -147,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0270-closest-binary-search-tree-value](https://github.com/JonathanCheng0101/Leetcode/tree/master/0270-closest-binary-search-tree-value) |
+| [0366-find-leaves-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0366-find-leaves-of-binary-tree) |
 | [0404-sum-of-left-leaves](https://github.com/JonathanCheng0101/Leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0501-find-mode-in-binary-search-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0501-find-mode-in-binary-search-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
