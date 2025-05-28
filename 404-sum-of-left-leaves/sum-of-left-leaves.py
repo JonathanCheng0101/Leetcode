@@ -7,23 +7,20 @@
 from collections import deque
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
-        res = 0
-        sensor = False
-        q = deque([root])
+        total = 0
 
-        while q:
-            length = len(q)
+        def dfs(node, left):
+            nonlocal total
+            if not node:
+                return 
+            
+            dfs(node.left, True)
+            dfs(node.right, False)
 
-            for _ in range(length):
-                node = q.popleft()
-                if node.left:
-                    if not node.left.left and not node.left.right:
-                        res += node.left.val
+            if not node.left and not node.right and left:
+                total += node.val
 
-                if node.left:
-                    q.append(node.left)
-                if node.right:
-                    q.append(node.right)
-
-        return res
+        dfs(root, False)
+        return total
+       
         
