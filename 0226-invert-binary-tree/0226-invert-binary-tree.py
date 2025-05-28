@@ -9,14 +9,18 @@ class Solution:
         if not root:
             return None
 
-        temp = root.left
+        temp_val = root.left
         root.left = root.right
-        root.right = temp
+        root.right = temp_val
+        
 
-        self.invertTree(root.left)
         self.invertTree(root.right)
+        self.invertTree(root.left)
 
         return root
+
+
+        
 
 
 
