@@ -7,33 +7,28 @@
 from collections import deque
 class Solution:
     def isCousins(self, root: Optional[TreeNode], x: int, y: int) -> bool:
-        if not root:
-            return False
-        q = deque([root])
+        # DFS
 
-        while q:
-            length = len(q)
 
-            for _ in range(length):
-                node = q.popleft()
-                if node and node.left and node.right:
-                    if (node.left.val == x and node.right.val == y)or (node.right.val == x and node.left.val == y):
-                        return False
-
-                if node.left:
-                    q.append(node.left)
-
-                
-                if node.right:
-                    q.append(node.right)
-                
-            if any(node.val == x for node in q) and any(node.val == y for node in q): 
-                return True
-        
-        return False
-
-                
-                
-                
+        def dfs(node, num, parent, level,res):
+            if not node:
+                return 
             
+
+            if node.val == num:
+                res.append(parent)
+                res.append(level)
+            parent = node.val
+            level += 1
+
+            dfs(node.left, num, parent, level,res)
+            dfs(node.right, num, parent, level,res)
+
+        res1, res2 = [], []
+        dfs(root, x, -1, 0, res1)
+        dfs(root, y, -1, 0, res2)
+        return (res1[0] != res2[0]) and (res1[1] == res2[1])
+
         
+
+            
