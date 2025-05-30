@@ -278,6 +278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0007-reverse-integer](https://github.com/JonathanCheng0101/Leetcode/tree/master/0007-reverse-integer) |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/JonathanCheng0101/Leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 | [3869-smallest-index-with-digit-sum-equal-to-index](https://github.com/JonathanCheng0101/Leetcode/tree/master/3869-smallest-index-with-digit-sum-equal-to-index) |
