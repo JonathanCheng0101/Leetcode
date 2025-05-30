@@ -1,4 +1,4 @@
-<h2><a href="https://leetcode.com/problems/find-distance-in-a-binary-tree">1883. Find Distance in a Binary Tree</a></h2><h3>Medium</h3><hr><p>Given the root of a binary tree and two integers <code>p</code> and <code>q</code>, return <em>the <strong>distance</strong> between the nodes of value </em><code>p</code><em> and value </em><code>q</code><em> in the tree</em>.</p>
+<h2><a href="https://leetcode.com/problems/find-distance-in-a-binary-tree">Find Distance in a Binary Tree</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>Given the root of a binary tree and two integers <code>p</code> and <code>q</code>, return <em>the <strong>distance</strong> between the nodes of value </em><code>p</code><em> and value </em><code>q</code><em> in the tree</em>.</p>
 
 <p>The <strong>distance</strong> between two nodes is the number of edges on the path from one to the other.</p>
 
