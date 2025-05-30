@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0199-binary-tree-right-side-view](https://github.com/JonathanCheng0101/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
+| [0250-count-univalue-subtrees](https://github.com/JonathanCheng0101/Leetcode/tree/master/0250-count-univalue-subtrees) |
 | [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0270-closest-binary-search-tree-value](https://github.com/JonathanCheng0101/Leetcode/tree/master/0270-closest-binary-search-tree-value) |
 | [0366-find-leaves-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0366-find-leaves-of-binary-tree) |
@@ -100,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0199-binary-tree-right-side-view](https://github.com/JonathanCheng0101/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
+| [0250-count-univalue-subtrees](https://github.com/JonathanCheng0101/Leetcode/tree/master/0250-count-univalue-subtrees) |
 | [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0270-closest-binary-search-tree-value](https://github.com/JonathanCheng0101/Leetcode/tree/master/0270-closest-binary-search-tree-value) |
 | [0366-find-leaves-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0366-find-leaves-of-binary-tree) |
@@ -172,6 +174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0199-binary-tree-right-side-view](https://github.com/JonathanCheng0101/Leetcode/tree/master/0199-binary-tree-right-side-view) |
 | [0226-invert-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0226-invert-binary-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
+| [0250-count-univalue-subtrees](https://github.com/JonathanCheng0101/Leetcode/tree/master/0250-count-univalue-subtrees) |
 | [0257-binary-tree-paths](https://github.com/JonathanCheng0101/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0270-closest-binary-search-tree-value](https://github.com/JonathanCheng0101/Leetcode/tree/master/0270-closest-binary-search-tree-value) |
 | [0366-find-leaves-of-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/0366-find-leaves-of-binary-tree) |
