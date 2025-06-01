@@ -19,32 +19,8 @@ class Solution:
         if not root:
             return 0
 
-        cnt = 0
+        dfs_left = self.maxDepth(root.left)
+        dfs_right = self.maxDepth(root.right)
 
-        q = deque([root])
+        return 1 + max(dfs_left, dfs_right)
 
-        while q:
-            length = len(q)
-
-            for _ in range(length):
-
-                node = q.popleft()
-
-                if node.left:
-                    q.append(node.left)
-
-                if node.right:
-                    q.append(node.right)
-            
-            cnt += 1
-
-        return cnt
-            
- 
-        
-
-
-
-
-    
-        
