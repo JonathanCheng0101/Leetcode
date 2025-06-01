@@ -6,17 +6,31 @@
 #         self.right = right
 class Solution:
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
-        def dfs(node, cur_sum):
+
+        def dfs(node, total):
             if not node:
                 return False
 
-            cur_sum += node.val
+            total += node.val
+
             if not node.left and not node.right:
-                return cur_sum == targetSum
-
-            return (dfs(node.left, cur_sum) or dfs(node.right, cur_sum))
+                if total == targetSum:
+                    return True
             
-            #cur_sum -= node.val
+            dfs_left = dfs(node.left,total)
+            dfs_right = dfs(node.right,total)
 
+            return dfs_left or dfs_right
 
         return dfs(root, 0)
+
+    
+
+
+
+
+                
+
+            
+
+            
