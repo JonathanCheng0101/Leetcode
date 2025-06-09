@@ -272,6 +272,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1777-determine-if-two-strings-are-close](https://github.com/JonathanCheng0101/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/JonathanCheng0101/Leetcode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1883-find-distance-in-a-binary-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1883-find-distance-in-a-binary-tree) |
+| [2413-smallest-number-in-infinite-set](https://github.com/JonathanCheng0101/Leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -373,6 +374,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/JonathanCheng0101/Leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/JonathanCheng0101/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [1014-k-closest-points-to-origin](https://github.com/JonathanCheng0101/Leetcode/tree/master/1014-k-closest-points-to-origin) |
+| [2413-smallest-number-in-infinite-set](https://github.com/JonathanCheng0101/Leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -407,6 +409,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0969-number-of-recent-calls](https://github.com/JonathanCheng0101/Leetcode/tree/master/0969-number-of-recent-calls) |
+| [2413-smallest-number-in-infinite-set](https://github.com/JonathanCheng0101/Leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 ## Queue
 |  |
 | ------- |
@@ -432,4 +435,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1014-k-closest-points-to-origin](https://github.com/JonathanCheng0101/Leetcode/tree/master/1014-k-closest-points-to-origin) |
+## Ordered Set
+|  |
+| ------- |
+| [2413-smallest-number-in-infinite-set](https://github.com/JonathanCheng0101/Leetcode/tree/master/2413-smallest-number-in-infinite-set) |
 <!---LeetCode Topics End-->
