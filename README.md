@@ -242,6 +242,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0643-maximum-average-subarray-i](https://github.com/JonathanCheng0101/Leetcode/tree/master/0643-maximum-average-subarray-i) |
 | [0735-asteroid-collision](https://github.com/JonathanCheng0101/Leetcode/tree/master/0735-asteroid-collision) |
 | [0907-koko-eating-bananas](https://github.com/JonathanCheng0101/Leetcode/tree/master/0907-koko-eating-bananas) |
+| [1014-k-closest-points-to-origin](https://github.com/JonathanCheng0101/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1046-max-consecutive-ones-iii](https://github.com/JonathanCheng0101/Leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1066-fixed-point](https://github.com/JonathanCheng0101/Leetcode/tree/master/1066-fixed-point) |
 | [1319-unique-number-of-occurrences](https://github.com/JonathanCheng0101/Leetcode/tree/master/1319-unique-number-of-occurrences) |
@@ -285,6 +286,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/JonathanCheng0101/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/JonathanCheng0101/Leetcode/tree/master/0349-intersection-of-two-arrays) |
+| [1014-k-closest-points-to-origin](https://github.com/JonathanCheng0101/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1777-determine-if-two-strings-are-close](https://github.com/JonathanCheng0101/Leetcode/tree/master/1777-determine-if-two-strings-are-close) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/JonathanCheng0101/Leetcode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/JonathanCheng0101/Leetcode/tree/master/2392-successful-pairs-of-spells-and-potions) |
@@ -313,6 +315,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0007-reverse-integer](https://github.com/JonathanCheng0101/Leetcode/tree/master/0007-reverse-integer) |
 | [0268-missing-number](https://github.com/JonathanCheng0101/Leetcode/tree/master/0268-missing-number) |
+| [1014-k-closest-points-to-origin](https://github.com/JonathanCheng0101/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/JonathanCheng0101/Leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 | [3869-smallest-index-with-digit-sum-equal-to-index](https://github.com/JonathanCheng0101/Leetcode/tree/master/3869-smallest-index-with-digit-sum-equal-to-index) |
 ## Bit Manipulation
@@ -360,10 +363,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/JonathanCheng0101/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [1014-k-closest-points-to-origin](https://github.com/JonathanCheng0101/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/JonathanCheng0101/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [1014-k-closest-points-to-origin](https://github.com/JonathanCheng0101/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -377,6 +382,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/JonathanCheng0101/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [1014-k-closest-points-to-origin](https://github.com/JonathanCheng0101/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Stack
 |  |
 | ------- |
@@ -417,4 +423,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0799-minimum-distance-between-bst-nodes](https://github.com/JonathanCheng0101/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0975-range-sum-of-bst](https://github.com/JonathanCheng0101/Leetcode/tree/master/0975-range-sum-of-bst) |
 | [1114-binary-search-tree-to-greater-sum-tree](https://github.com/JonathanCheng0101/Leetcode/tree/master/1114-binary-search-tree-to-greater-sum-tree) |
+## Geometry
+|  |
+| ------- |
+| [1014-k-closest-points-to-origin](https://github.com/JonathanCheng0101/Leetcode/tree/master/1014-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
