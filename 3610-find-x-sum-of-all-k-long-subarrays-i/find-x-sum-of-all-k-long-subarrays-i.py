@@ -3,8 +3,8 @@ from heapq import heappop, heapify
 class Solution:
     def findXSum(self, nums: List[int], k: int, x: int) -> List[int]:
         res = []
-        for i in range(len(nums)- k + 1):
-            new_num = nums[i:i+k]
+        for i in range(k, len(nums)+1):
+            new_num = nums[i - k:i]
             counter = Counter(new_num)
 
             if len(counter) < x:
