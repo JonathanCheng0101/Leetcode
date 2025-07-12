@@ -4,11 +4,10 @@ class Solution:
         for i, ele in enumerate(nums):
             need = target - ele
             if need in res:
-                return [res[need], i]
-                
-            
-            res[ele] = i
-                
+                return [i, res[need]]
+            else:
+                res[ele] = i
+
 
             
         
