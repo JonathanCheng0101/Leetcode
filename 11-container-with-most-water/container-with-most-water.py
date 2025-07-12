@@ -1,18 +1,23 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
+        # use binary search
         l, r = 0, len(height) - 1
-        capacity = min(height[l], height[r]) * (r - l)
+        res = 0
+
         while l < r:
+            output = (r - l) * min(height[l], height[r])
+            res = max(res, output)
+
             if height[r] > height[l]:
                 l += 1
             else:
                 r -= 1
-            
-            current = min(height[l], height[r]) * (r - l)
 
-            capacity = max(current, capacity)
+        return res
+
         
-        return capacity
+
+
 
 
 
