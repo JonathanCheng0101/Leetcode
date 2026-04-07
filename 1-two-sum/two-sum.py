@@ -6,7 +6,7 @@ class Solution:
             if need in res:
                 return [i, res[need]]
             else:
-                res[ele] = i
+                res[ele] = i 
 
 
             
