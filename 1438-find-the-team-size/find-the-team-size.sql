@@ -1,12 +1,5 @@
 # Write your MySQL query statement below
-WITH size AS(
-    SELECT team_id,
-           COUNT(team_id) AS team_size
-    FROM Employee
-    GROUP BY team_id
-    ) 
-SELECT e.employee_id,
-       s.team_size
-FROM Employee e
-JOIN size s
-ON e.team_id = s.team_id;
+
+SELECT employee_id,
+       COUNT(*) OVER (partition BY team_id) AS team_size
+FROM Employee ;
