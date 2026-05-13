@@ -1,11 +1,13 @@
+from collections import Counter
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        count = {}
+        res = []
+        nums_dict = Counter(nums)
+        sorted_item = sorted(nums_dict.items(), key = lambda x:x[1], reverse= True)
+        for (num,v) in sorted_item:
+            if k > 0:
+                res.append(num)
+                k -= 1
 
-        for num in nums:
-            count[num] = 1 + count.get(num, 0)
-        
-        topk = sorted(count.items(), key = lambda x:x[1], reverse=True)[:k]
-
-        return [num for num, freq in topk]
-
+        return res
+            
