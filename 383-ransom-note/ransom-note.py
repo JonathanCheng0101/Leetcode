@@ -1,22 +1,17 @@
+from collections import defaultdict
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        res = {}
-        if len(ransomNote) > len(magazine):
-            return False
+        cnt = defaultdict(int)
+
+        for char in ransomNote:
+            cnt[char] += 1
+
+        for char in magazine:
+                cnt[char] -= 1
+
         
-
-        else:
-            for ele in magazine:
-                res[ele] = res.get(ele, 0) + 1
-
-            for ele in ransomNote:
-                if ele in res:
-                    res[ele] -= 1
-                    
-                    if res[ele] < 0:
-                        return False
-                else:
-                    return False
-
-            return True
+        for val in cnt.values():
+            if val >0:
+                return False
             
+        return True
