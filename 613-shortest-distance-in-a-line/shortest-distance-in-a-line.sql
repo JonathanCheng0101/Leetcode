@@ -1,7 +1,7 @@
-# Write your MySQL query statement below
-WITH t AS (
-    SELECT ABS(LEAD(x) OVER (ORDER BY x DESC) - x) AS diff
+WITH t as(
+    SELECT (ABS(x - LEAD(x) OVER(ORDER BY x))) AS shortest
     FROM `Point`
 )
-SELECT MIN(diff) AS shortest
+SELECT MIN(shortest) AS shortest
 FROM t
+WHERE shortest IS NOT NULL;
