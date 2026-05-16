@@ -7,6 +7,7 @@ class Solution:
             cnt[char] += 1
 
         for char in magazine:
+            if char in cnt:
                 cnt[char] -= 1
 
         
