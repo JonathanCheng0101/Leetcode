@@ -1,6 +1,5 @@
-SELECT s1.sale_date,
-       s1.sold_num - s2.sold_num AS diff
-FROM Sales s1
-JOIN Sales s2
-ON s1.sale_date = s2.sale_date 
-WHERE s1.fruit = 'apples' AND s2.fruit = 'oranges';
+SELECT DISTINCT sale_date,
+       SUM(CASE WHEN fruit = 'apples' THEN sold_num ELSE 0 END)OVER(PARTITION BY sale_date)      
+       -  
+       SUM(CASE WHEN fruit = 'oranges' THEN sold_num ELSE 0 END)OVER(PARTITION BY sale_date) AS diff
+FROM Sales
