@@ -1,18 +1,22 @@
 from collections import defaultdict
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        cnt = defaultdict(int)
+        # r 是 m 的子集合
+        r_dict = defaultdict(int)
+        m_dict = defaultdict(int)
 
-        for char in ransomNote:
-            cnt[char] += 1
+        for ele in ransomNote:
+            r_dict[ele] += 1
 
-        for char in magazine:
-            if char in cnt:
-                cnt[char] -= 1
+        for ele in magazine:
+            m_dict[ele] += 1
 
-        
-        for val in cnt.values():
-            if val >0:
+        for ele in r_dict:
+            if ele not in m_dict:
                 return False
-            
+            else:
+                m_dict[ele] -= r_dict[ele]
+        for ele in m_dict:
+            if m_dict[ele] < 0:
+                return False
         return True
