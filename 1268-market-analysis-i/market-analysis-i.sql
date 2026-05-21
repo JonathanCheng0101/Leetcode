@@ -5,6 +5,6 @@ SELECT  u.user_id AS buyer_id,
 FROM Users u
 LEFT JOIN Orders o
 ON u.user_id = o.buyer_id AND DATE_FORMAT(o.order_date, "%Y") = '2019' 
-GROUP BY u.user_id, u.join_date
+GROUP BY u.user_id
 
 
