@@ -7,7 +7,7 @@ class Solution:
         sorted_wrd = sorted(Counter(wrds).items(), key = lambda x: x[1], reverse = True)
         
         for k, _ in sorted_wrd:
-            if k in banned:
+            if k in set(banned):
                 continue
             else:
                 return k
