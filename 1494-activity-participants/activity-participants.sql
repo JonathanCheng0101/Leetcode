@@ -13,9 +13,9 @@ WITH t AS(
 )
 SELECT activity
 FROM b
-WHERE total_cnt NOT IN(SELECT MIN(total_cnt)FROM b) 
+WHERE total_cnt !=(SELECT MIN(total_cnt)FROM b) 
       AND 
-      total_cnt NOT IN(SELECT MAX(total_cnt)FROM b)
+      total_cnt !=(SELECT MAX(total_cnt)FROM b)
 
 
 
