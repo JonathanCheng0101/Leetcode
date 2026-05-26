@@ -1,24 +1,11 @@
-# Write your MySQL query statement below
 WITH t AS(
     SELECT activity,
-           COUNT(id) AS cnt
+           COUNT(*) AS cnt
     FROM Friends
     GROUP BY activity
-),b AS(
-    SELECT activity,
-        IFNULL(t.cnt, 0) AS total_cnt
-    FROM Activities a
-    LEFT JOIN t
-    ON a.name = t.activity
 )
-SELECT activity
-FROM b
-WHERE total_cnt !=(SELECT MIN(total_cnt)FROM b) 
-      AND 
-      total_cnt !=(SELECT MAX(total_cnt)FROM b)
-
-
-
-
-
-
+SELECT a.name AS activity
+FROM Activities a
+LEFT JOIN t
+ON t.activity = a.name
+WHERE cnt NOT IN(SELECT MAX(cnt) FROM t) AND cnt NOT IN (SELECT MIN(cnt) FROM t)
