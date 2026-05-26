@@ -14,9 +14,8 @@ WITH t AS(
 SELECT left_operand,
        operator,
        right_operand,
-       CASE WHEN operator = '>' AND `left` > `right` THEN 'true' 
+       CASE WHEN operator = '>' AND `left` > `right` THEN 'true'
             WHEN operator = '=' AND `left` = `right` THEN 'true'
             WHEN operator = '<' AND `left` < `right` THEN 'true'
-            ELSE 'false'
-       END AS value
+       ELSE 'false' END AS value
 FROM t
