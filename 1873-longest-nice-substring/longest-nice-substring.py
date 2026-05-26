@@ -1,25 +1,21 @@
 class Solution:
     def longestNiceSubstring(self, s: str) -> str:
-        cur = ""
         res = ""
+
         for start in range(len(s)):
-            for end in range(start + 1, len(s)+1):
-                sub = s[start:end]
-                valid = True
+            for end in range(start + 1, len(s) + 1):
+                new_s = s[start:end]
 
-                for char in sub:
-                    if char.swapcase() not in sub:
-                        valid = False
+                for char in new_s:
+                    if char.swapcase() not in new_s:
+                        legid = False
                         break
-                cur = sub
-                if valid and len(cur) > len(res):
-                    
-                    res = cur
-                    cur = ""
+                    else:
+                        legid = True
 
+                if legid:
+                    if len(new_s)>len(res):
+                        res = new_s
+        
         return res
 
-
-
-        
-        
