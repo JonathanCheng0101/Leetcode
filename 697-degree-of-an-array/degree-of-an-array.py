@@ -1,34 +1,29 @@
 from collections import Counter
 class Solution:
     def findShortestSubArray(self, nums: List[int]) -> int:
-        needs = []
-        # [num, freq]
-        cnt_nums = Counter(nums)
-        max_freq = max(cnt_nums.values())
-        
-        needs = []
-        for num, freq in cnt_nums.items():
-            if freq == max_freq:
-                needs.append(num)
+        first = {}
+        last = {}
+        cnt = {}
 
-        res = inf
-        
-        for need in needs:
-            min_index = inf
-            max_index = -inf
-            for i, num in enumerate(nums):
-                if num == need:
-                    min_index = min(i, min_index)
-                    max_index = max(i, max_index)
+        for i, num in enumerate(nums):
+            cnt[num] = cnt.get(num, 0) + 1
 
-            cur = max_index - min_index + 1
-            res = min(res, cur)
+            if num not in first:
+                first[num] = i
+
+            
+            last[num] = i
+
+        
+        max_cnt = max(cnt.values())
+        res = float('inf')
+        for num in cnt:
+            if cnt[num] == max_cnt:
+                cur = last[num] - first[num] + 1
+
+                res = min(res, cur)
 
         return res
 
-        
-
-
-            
 
         
