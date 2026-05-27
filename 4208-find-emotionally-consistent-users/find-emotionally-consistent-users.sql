@@ -1,27 +1,27 @@
-# Write your MySQL query statement below
 WITH t AS(
-    SELECT user_id,
-           COUNT(content_id) AS total_cnt
-    FROM reactions 
+    SELECT user_id
+    FROM reactions
     GROUP BY user_id
     HAVING COUNT(DISTINCT content_id) >= 5
-)
-, a AS(
+),
+a AS(
     SELECT r.user_id,
-           r.reaction,
-           COUNT(r.content_id) AS reaction_cnt
+        r.reaction,
+        COUNT(reaction) AS reaction_cnt
     FROM reactions r
+    JOIN t
+    ON r.user_id = t.user_id
     GROUP BY r.user_id, r.reaction
-), b AS(
-    SELECT a.user_id,
-       a.reaction AS dominant_reaction,
-       CASE WHEN a.reaction_cnt/t.total_cnt > 0.6 THEN ROUND(reaction_cnt/t.total_cnt, 2) END AS reaction_ratio
-FROM a
-JOIN t
-ON t.user_id = a.user_id
+),b AS(
+    SELECT user_id,
+        reaction AS dominant_reaction,
+        reaction_cnt/ SUM(reaction_cnt)OVER(PARTITION BY user_id) AS reaction_ratio
+    FROM a
 )
-SELECT *
+SELECT user_id,
+       dominant_reaction,
+       ROUND(reaction_ratio, 2) AS reaction_ratio
 FROM b
-WHERE reaction_ratio IS NOT NULL
+HAVING reaction_ratio >= 0.6
 ORDER BY reaction_ratio DESC, user_id ASC;
 
