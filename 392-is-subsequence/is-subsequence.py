@@ -3,13 +3,16 @@ class Solution:
         left = 0
         
         for char in s:
-            while left < len(t) and t[left] != char:
+            if left < len(t) and t[left] == char:
                 left += 1
+            else:
+                while left < len(t) and t[left] != char:
+                    left += 1
 
-            if left == len(t):
-                return False 
+                if left == len(t):
+                    return False 
 
-            left += 1                       
+                left += 1                       
 
                 
         return True
