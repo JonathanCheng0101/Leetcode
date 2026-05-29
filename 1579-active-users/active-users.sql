@@ -1,24 +1,22 @@
-# Write your MySQL query statement below
 WITH t AS(
-    SELECT *
-    FROM Logins
-    GROUP BY id, login_date
-), a AS(
-    SELECT *,
-       ROW_NUMBER() OVER (PARTITION BY id ORDER BY login_date ASC) AS rn
-    FROM t
+    SELECT DISTINCT login_date,
+        id
+FROM Logins
 ), b AS(
-    SELECT *,
-       DATE_SUB(login_date, INTERVAL rn day) AS base_date
-    FROM a
+    SELECT login_date,
+           id,
+           ROW_NUMBER()OVER(PARTITION BY id ORDER BY login_date ASC) AS rn
+    FROM t
 )
 SELECT DISTINCT b.id,
-       acc.name
+    a.name
 FROM b
-JOIN Accounts acc
-ON b.id = acc.id
-GROUP BY id, base_date
-HAVING COUNT(*) >= 5
+JOIN Accounts a
+ON b.id = a.id
+GROUP BY b.id, DATE_SUB(b.login_date, INTERVAL b.rn - 1 day)
+HAVING COUNT(b.id) >= 5
 ORDER BY b.id ASC;
+
+
 
 
