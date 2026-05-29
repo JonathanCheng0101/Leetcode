@@ -1,16 +1,14 @@
-# Write your MySQL query statement below
-WITH RECURSIVE num AS(
-    SELECT 1 AS ids
+WITH RECURSIVE t AS(
+    SELECT 1 AS number
 
     UNION ALL
 
-    SELECT ids + 1
-    FROM num
-    WHERE ids < (SELECT MAX(customer_id) FROM Customers)
+    SELECT number + 1
+    FROM t
+    WHERE number < (SELECT MAX(customer_id)FROM Customers)
 )
-
-SELECT num.ids
-FROM num
+SELECT t.number AS ids
+FROM t
 LEFT JOIN Customers c
-ON num.ids = c.customer_id
+ON t.number = c.customer_id
 WHERE c.customer_id IS NULL
