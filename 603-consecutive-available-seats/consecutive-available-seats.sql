@@ -1,7 +1,12 @@
-# Write your MySQL query statement below
-SELECT DISTINCT c1.seat_id
-FROM Cinema c1
-JOIN Cinema c2
-ON abs(c1.seat_id - c2.seat_id) = 1
-WHERE c1.free = 1 AND c2.free = 1
-ORDER by c1.seat_id ASC;
+WITH t AS(
+    SELECT *
+    FROM Cinema
+    WHERE free = 1
+), a AS(
+SELECT CASE WHEN (seat_id - LAG(seat_id)OVER(ORDER BY seat_id) = 1) OR (LEAD(seat_id)OVER(ORDER BY seat_id) - seat_id= 1) THEN seat_id END AS seat_id
+FROM t
+)
+SELECT seat_id
+FROM a
+WHERE seat_id IS NOT NULL;
+
