@@ -1,21 +1,17 @@
-# Write your MySQL query statement below
 WITH t AS(
-    SELECT HOUR(call_time) AS peak_calling_hour,
-           city,
-           COUNT(*) AS number_of_calls
-    FROM Calls
-    GROUP BY city, HOUR(call_time)
-), a AS(
-    SELECT city,
-       peak_calling_hour,
-       number_of_calls,
-       RANK()OVER(PARTITION BY city ORDER BY number_of_calls DESC) AS rn
-FROM t
+    SELECT DISTINCT city,
+       HOUR(call_time) AS `hour`,
+       COUNT(city) OVER(PARTITION BY city,HOUR(call_time)) AS cnt
+    FROM calls
+)
+, a AS(
+    SELECT *,
+        RANK()OVER(PARTITION BY city ORDER BY cnt DESC) AS rn
+    FROM t
 )
 SELECT city,
-       peak_calling_hour,
-       number_of_calls
+       `hour` AS peak_calling_hour,
+       cnt AS number_of_calls
 FROM a
 WHERE rn = 1
-ORDER BY peak_calling_hour DESC, city DESC;
-
+ORDER BY `hour` DESC, city DESC;
