@@ -1,7 +1,6 @@
-WITH t as(
-    SELECT (ABS(x - LEAD(x) OVER(ORDER BY x))) AS shortest
+WITH t AS(
+    SELECT (LEAD(x)OVER(ORDER BY x ASC) - x) AS diff
     FROM `Point`
 )
-SELECT MIN(shortest) AS shortest
-FROM t
-WHERE shortest IS NOT NULL;
+SELECT MIN(diff) AS shortest
+FROM t;
