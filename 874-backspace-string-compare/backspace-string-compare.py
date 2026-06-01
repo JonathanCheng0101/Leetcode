@@ -1,39 +1,32 @@
 class Solution:
     def backspaceCompare(self, s: str, t: str) -> bool:
-        l, r = len(s) - 1, len(t) - 1
-        l_cnt, r_cnt = 0, 0
+        l = len(s) - 1
+        l_cur = 0
+        l_res = []
 
+        while l >= 0:
+            if s[l] == "#":
+                l_cur += 1
+            elif s[l] != "#" and l_cur != 0:
+                l_cur -= 1
+            elif s[l] != "#" and l_cur == 0:
+                l_res.append(s[l])
 
-        while l >= 0 or r >= 0:
-            while l >= 0:
-                if s[l] == "#":
-                    l -= 1
-                    l_cnt += 1
-                elif l_cnt > 0:
-                    l -= 1
-                    l_cnt -= 1
-                else:
-                    break
+            l -= 1 
 
-            while r >= 0:
-                if t[r] == "#":
-                    r -= 1
-                    r_cnt += 1
-                elif r_cnt > 0:
-                    r -= 1
-                    r_cnt -= 1
-                else:
-                    break
-        
-            if l >= 0 and r >= 0:
-                if s[l] != t[r]:
-                    return False
-            elif l >= 0 or r >= 0:
-                return False
-            l -= 1
-            r -= 1
-                      
-        return True
-            
+        r = len(t) - 1
+        r_cur = 0
+        r_res = []
 
+        while r >= 0:
+            if t[r] == "#":
+                r_cur += 1
+            elif t[r] != "#" and r_cur != 0:
+                r_cur -= 1
+            elif t[r] != "#" and r_cur == 0:
+                r_res.append(t[r])
+
+            r -= 1 
+
+        return r_res == l_res
 
