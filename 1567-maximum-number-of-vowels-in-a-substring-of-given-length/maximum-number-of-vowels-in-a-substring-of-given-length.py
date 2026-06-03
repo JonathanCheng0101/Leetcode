@@ -1,24 +1,26 @@
 class Solution:
     def maxVowels(self, s: str, k: int) -> int:
-        vowel_set = set({'a', 'e', 'i', 'o', 'u'})
-        curr = res = l = 0
+        vowels = ['a', 'e','i','o','u']
+        strings = list(s)
+        cur = strings[:k]   # cur = current字
+        res = 0
 
-        for i in range(k):
-            if s[i] in vowel_set:
-                curr += 1
+        for ele in cur:
+            if ele in vowels:
+                res += 1    # res = current vowels數量
+        total = res
+        
+        for i in range(k, len(s)):
+            cur += strings[i]
+            if strings[i] in vowels:
+                res += 1
+
+            cur = strings[i-k+ 1: i]
+            if strings[i - k] in vowels:
+                res -= 1
+
+            total = max(total, res)
+
+        return total
             
-        res = curr
 
-        for r in range(k, len(s)):
-            if s[r] in vowel_set:
-                curr += 1
-
-            
-            if s[l] in vowel_set:
-                curr -= 1
-            l += 1
-
-            res = max(res, curr)
-
-
-        return res        
