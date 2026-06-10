@@ -1,29 +1,29 @@
 from heapq import heappop, heappush, heapify
 class Solution:
     def findRelativeRanks(self, score: List[int]) -> List[str]:
-        heap = []
-        for i, ele in enumerate(score):
-            heappush(heap, (-ele,i)) # index, ele
+        d = {}
+        res = []
 
-        res = [""] * len(score)
-        rank = 1
-        while heap:
-            _, i = heappop(heap)
-            
-            if rank == 1:
-                res[i] = "Gold Medal"
-            elif rank ==2:
-                res[i] = "Silver Medal"
-            elif rank ==3:
-                res[i] = "Bronze Medal"
+        scores = score[:]
+        heap = [- x for x in score]
+        heapify(heap)
+        
+        for i in range(len(score)):
+            a = -heappop(heap)
+            if i == 0:
+                d[a] = "Gold Medal"
+            elif i == 1:
+                d[a] = "Silver Medal"
+            elif i == 2:
+                d[a] = "Bronze Medal"
+
             else:
-                res[i] =str(rank)
+                d[a] = str(i+1)
 
-            rank += 1
-
+        for ele in scores:
+            res.append(d[ele])
+        
         return res
 
-
-
         
-        
+                
