@@ -1,13 +1,13 @@
-from heapq import heappop, heappush, heapify
+from heapq import heapify, heappop, heappush, heappushpop
+from math import sqrt
 class Solution:
     def pickGifts(self, gifts: List[int], k: int) -> int:
-        gifts = [-gift for gift in gifts]
+        heap = [-gift for gift in gifts]
+        heapify(heap)
 
-        heapify(gifts)
+        while k > 0:
+            a = -heappop(heap)
+            heappush(heap, -floor(sqrt(a)))
+            k -= 1
 
-        for _ in range(k):
-            num =  -heappop(gifts)
-            new_num = math.sqrt(num)
-            heappush(gifts, -math.floor(new_num))
-
-        return -sum(gifts)
+        return -sum(heap)
