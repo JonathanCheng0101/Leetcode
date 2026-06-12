@@ -1,16 +1,15 @@
-# Write your MySQL query statement below
-SELECT e.employee_id
-FROM Employees e
-LEFT JOIN Salaries s
-ON e.employee_id = s.employee_id
-WHERE s.salary IS NULL
-
-UNION
-
-SELECT s.employee_id
-FROM Salaries s
+WITH t AS(
+    SELECT employee_id 
+    FROM Employees
+    UNION ALL
+    SELECT employee_id 
+    FROM Salaries
+)
+SELECT t.employee_id
+FROM t
 LEFT JOIN Employees e
-ON e.employee_id = s.employee_id
-WHERE e.name IS NULL
-
-ORDER BY employee_id ASC;
+ON t.employee_id = e.employee_id 
+LEFT JOIN Salaries s
+ON t.employee_id = s.employee_id 
+WHERE e.name IS NULL OR s.salary IS NULL
+ORDER BY t.employee_id ASC
