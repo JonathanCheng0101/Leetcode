@@ -1,28 +1,21 @@
 class Solution:
     def intervalIntersection(self, firstList: List[List[int]], secondList: List[List[int]]) -> List[List[int]]:
-        res = []
+        l, r = 0, 0
         lst1 = firstList
         lst2 = secondList
-
-        l, r = 0, 0
+        res = []
 
         while l < len(lst1) and r < len(lst2):
-            # compare lst1[l]  lst2[r]
-            if lst1[l][0] <= lst2[r][1] and lst1[l][1] >= lst2[r][0]:
+            # overlapping
+            if lst1[l][1] >= lst2[r][0] and lst1[l][0] <= lst2[r][1]:
                 left_side = max(lst1[l][0], lst2[r][0])
                 right_side = min(lst1[l][1], lst2[r][1])
-            
-                temp = [left_side, right_side]
-                res.append(temp)
+                res.append([left_side, right_side])
 
-                # compare
-            if lst1[l][1] >= lst2[r][1]:
-                r += 1
-            else: 
+            # l or r moving
+            if lst1[l][1] <= lst2[r][1]:
                 l += 1
-
-
+            else:
+                r += 1
+        
         return res
-            
-
-
