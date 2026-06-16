@@ -1,9 +1,9 @@
-# Write your MySQL query statement below
-SELECT emp_id,
-       firstname,
-       lastname,
-       MAX(salary) AS salary,
-       department_id
-FROM Salary
-GROUP BY emp_id
+WITH t AS(
+    SELECT *,
+        RANK()OVER(PARTITION BY emp_id ORDER BY salary DESC) AS rn
+    FROM Salary
+)
+SELECT emp_id, firstname, lastname, salary, department_id
+FROM t
+WHERE rn = 1
 ORDER BY emp_id ASC;
