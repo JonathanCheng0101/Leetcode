@@ -1,6 +1,10 @@
-# Write your MySQL query statement below
-SELECT bike_number,
-       MAX(end_time) AS end_time
-FROM Bikes
-GROUP BY bike_number
+WITH t AS(
+    SELECT bike_number,
+        end_time,
+        RANK()OVER(PARTITION BY bike_number ORDER BY end_time DESC) AS rn
+    FROM Bikes
+)
+SELECT bike_number, end_time
+FROM t
+WHERE rn = 1
 ORDER BY end_time DESC;
