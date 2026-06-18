@@ -1,17 +1,21 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         res = []
-        hash_map = {')':'(',
-                    '}':'{',
-                    ']':'['}
+        d = {')':'(',
+            '}':'{',
+            ']':'['}
 
-        for ele in s:
-            if len(res) == 0:
-                res.append(ele)
-            elif ele in hash_map and hash_map[ele] == res[-1] and len(res)>0:
-                res.pop()
+        for char in s:
+            if char not in d:
+                res.append(char)
+            
             else:
-                res.append(ele)
+                if not res:
+                    return False
+                elif res[-1] == d[char]:
+                    res.pop()
+                elif res[-1] != d[char]:
+                    return False
 
         return len(res) == 0
         
