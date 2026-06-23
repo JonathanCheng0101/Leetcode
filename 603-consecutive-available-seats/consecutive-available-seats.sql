@@ -1,12 +1,9 @@
-WITH t AS(
-    SELECT *
-    FROM Cinema
-    WHERE free = 1
-), a AS(
-SELECT CASE WHEN (seat_id - LAG(seat_id)OVER(ORDER BY seat_id) = 1) OR (LEAD(seat_id)OVER(ORDER BY seat_id) - seat_id= 1) THEN seat_id END AS seat_id
-FROM t
-)
-SELECT seat_id
-FROM a
-WHERE seat_id IS NOT NULL;
+SELECT c1.seat_id
+FROM Cinema c1
+LEFT JOIN Cinema c2
+ON c1.seat_id = c2.seat_id - 1
+LEFT JOIN Cinema c3
+ON c1.seat_id = c3.seat_id + 1
+WHERE c1.free = 1 AND (c2.free = 1 OR c3.free = 1)
+ORDER BY c1.seat_id
 
