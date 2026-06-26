@@ -1,15 +1,10 @@
-# Write your MySQL query statement below
-WITH t AS(
-    SELECT c.salesperson_id,
-           SUM(s.price) AS total
-    FROM Customer c
-    JOIN Sales s
-    ON c.customer_id = s.customer_id
-    GROUP BY c.salesperson_id
-)
+#| salesperson_id | name  | total |
 SELECT s.salesperson_id,
        s.name,
-       IFNULL(t.total, 0) AS total
+       COALESCE(SUM(sa.price), 0) AS total
 FROM Salesperson s
-LEFT JOIN t
-ON s.salesperson_id = t.salesperson_id
+LEFT JOIN Customer c
+ON s.salesperson_id = c.salesperson_id
+LEFT JOIN Sales sa
+ON sa.customer_id = c.customer_id
+GROUP BY s.salesperson_id
