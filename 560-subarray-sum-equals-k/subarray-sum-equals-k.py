@@ -1,17 +1,20 @@
+
+from collections import defaultdict 
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
-        res = 0
-        d = {0:1}
+        d = defaultdict(list)
+        d[0].append(-1) # prefix, index
         prefix = 0
-        for num in nums:
+        res = 0
+
+        for i, num in enumerate(nums):
             prefix += num
+            need = prefix - k
+
+            if need in d:
+                    res += len(d[need])
             
-            if (prefix - k) in d:
-                res += d[prefix - k]
-                
-            d[prefix] = d.get(prefix, 0) + 1
-            
+            d[prefix].append(i) 
 
         return res
-            
-
+    
