@@ -1,19 +1,23 @@
+# Write your MySQL query statement below
+# book_id, name
+
 WITH t AS(
-    SELECT *
+    SELECT book_id, name
     FROM Books
-    WHERE TIMESTAMPDIFF(day, available_from, '2019-06-23') >= 30
-), o AS(
-    SELECT book_id, quantity
+    WHERE TIMESTAMPDIFF(DAY, available_from, '2019-06-23') > 30
+), a AS(
+    SELECT book_id, SUM(quantity) AS quantity
     FROM Orders
-    WHERE TIMESTAMPDIFF(day, dispatch_date, '2019-06-23') <= 365
+    WHERE TIMESTAMPDIFF(DAY, dispatch_date , '2019-06-23') < 365 AND TIMESTAMPDIFF(DAY, dispatch_date , '2019-06-23') > 0
     GROUP BY book_id
-    HAVING SUM(quantity) >= 10
+    HAVING quantity >= 10
 )
-SELECT t.book_id,
-       t.name
+SELECT t.book_id, t.name
 FROM t
-WHERE NOT EXISTS(
+WHERE NOT EXISTS (
     SELECT 1
-    FROM o
-    WHERE t.book_id = o.book_id
+    FROM a
+    WHERE a.book_id = t.book_id
 )
+
+
