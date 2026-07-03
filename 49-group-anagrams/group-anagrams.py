@@ -5,14 +5,14 @@ class Solution:
         d = defaultdict(list)
         for s in strs:
             s_cnt = Counter(s)
-
             key = "".join(sorted(s))
-            
+            if key not in d:
+                d[key] = []
+                
             d[key].append(s)
 
         return list(d.values())
 
-    
 
 
 
