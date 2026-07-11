@@ -10,9 +10,9 @@ class Solution:
 
             need = prefix - k
             if need in d:
-                res = max(res, i - d[need]) 
-            
+                res = max(res, i - d[need])
+
             if prefix not in d:
                 d[prefix] = i
-
+        
         return res
