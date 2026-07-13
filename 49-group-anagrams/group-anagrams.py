@@ -3,17 +3,19 @@ from collections import defaultdict
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         d = defaultdict(list)
-        for s in strs:
-            s_cnt = Counter(s)
-            key = "".join(sorted(s))
-            if key not in d:
-                d[key] = []
-                
-            d[key].append(s)
 
-        return list(d.values())
+        for word in strs:
+            s_cnt = Counter(word)
 
-
+            key = str(sorted(word))
+            print(key)
+            if key in d:
+                d[key].append(word)
+            else:
+                d[key].append(word)
+            
+        
+        return [list(x) for x in d.values()]
 
 
      
