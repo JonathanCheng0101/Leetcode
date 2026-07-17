@@ -1,17 +1,12 @@
-from heapq import heapify, heappop, heappush 
-from collections import defaultdict
+from collections import Counter
 class Solution:
     def frequencySort(self, s: str) -> str:
-        wrd_dict = defaultdict(int)
-        for char in s:
-            wrd_dict[char] += 1
+        res = ""
+        s_cnt = Counter(s)
+        sorted_s = sorted(s_cnt.items(), key = lambda x:- x[1])
+        print(sorted_s)
 
-        sorted_lst = sorted(wrd_dict.items(), key=lambda x:x[1], reverse=True)
-        output = ""
-        for char, cnt in sorted_lst:
-            output += char * cnt
-
-        return output
-
-
+        for char, freq in sorted_s:
+            res += char * freq
         
+        return res
