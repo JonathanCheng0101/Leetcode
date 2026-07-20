@@ -1,27 +1,23 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
-        if len(s) != len(t):
-            return False
-        
-        d = {}
-        d_t = {}
-        
-        n = len(s)
-        for i in range(n):
-            if s[i] not in d:
-                d[s[i]] = t[i]
-            
-            else:
-                if t[i] != d[s[i]]:
-                    return False
-            
-            if t[i] not in d_t:
-                d_t[t[i]] = s[i]
-            
-            else:
-                if s[i] != d_t[t[i]]:
-                    return False
-        
-        return True
+        s_d = {}
 
+        for index, char in enumerate(s):
+            if char not in s_d:
+                s_d[char] = t[index]
+            else:
+                if s_d[char] != t[index]:
+                    return False
+
+        s_t = {}
+
+        for index, char in enumerate(t):
+            if char not in s_t:
+                s_t[char] = s[index]
+            else:
+                if s_t[char] != s[index]:
+                    return False
+    
+        return True
         
+
