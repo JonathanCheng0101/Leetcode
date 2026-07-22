@@ -3,7 +3,8 @@ class Solution:
         slow = 0
         for fast in range(len(nums)):
             if nums[fast] != nums[slow]:
+                nums[slow + 1] = nums[fast]
+
                 slow += 1
-                nums[slow] = nums[fast]
-        return slow+1
         
+        return slow+ 1
