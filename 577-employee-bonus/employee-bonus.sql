@@ -1,5 +1,5 @@
-SELECT e.name,
-       b.bonus
+#  name | bonus
+SELECT name, bonus
 FROM Employee e
 LEFT JOIN Bonus b
 ON e.empId = b.empId
