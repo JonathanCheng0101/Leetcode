@@ -1,8 +1,6 @@
-WITH t AS(
-    SELECT CASE WHEN TIMESTAMPDIFF(day,LAG(recordDate) OVER (ORDER BY recordDate ASC),recordDate) = 1 AND  temperature - LAG(temperature) OVER(ORDER BY recordDate ASC)> 0 THEN id
-END AS id
-FROM Weather
-)
-SELECT id
-FROM t
-WHERE id IS NOT NULL;
+# Write your MySQL query statement below
+SELECT w1.id
+FROM Weather w1
+JOIN Weather w2
+ON DATEDIFF(w1.recordDate, w2.recordDate) = 1
+WHERE w1.temperature > w2.temperature
