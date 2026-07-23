@@ -1,18 +1,27 @@
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
-        split_s = s.split(" ")
-        def encode(w):
-            d = {}
-            res_w = []
-            for i, ele in enumerate(w):
-                if ele not in d:
-                    d[ele] = i
-                res_w.append(d[ele])
-            return res_w
-            
-        if len(encode(pattern)) != len(encode(split_s)):
+        p_lst = list(pattern)
+        s_lst = s.split(' ')
+        if len(s_lst) != len(p_lst):
             return False
-
-        return encode(pattern) == encode(split_s)
-                
+        
+        d = {}
+        for i in range(len(p_lst)):
+            if p_lst[i] not in d:
+                d[p_lst[i]] = s_lst[i]
+            else:
+                if d[p_lst[i]] != s_lst[i]:
+                    return False
+        
+        t = {}
+        for i in range(len(s_lst)):
+            if s_lst[i] not in t:
+                t[s_lst[i]] = p_lst[i]
+            else:
+                if t[s_lst[i]] != p_lst[i]:
+                    return False
+            
+        
+        return True
+        
                 
