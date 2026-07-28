@@ -1,11 +1,6 @@
-# Write your MySQL query statement below
-WITH t AS(
-    SELECT *,
-        FLOOR((minute-1)/6)+1 AS interval_no
-    FROM Orders
-)
-SELECT interval_no,
+SELECT FLOOR((minute  - 1)/6) + 1 AS interval_no,
        SUM(order_count) AS total_orders
-FROM t
-GROUP BY interval_no
+FROM Orders
+GROUP BY FLOOR((minute  - 1)/6) + 1 
 ORDER BY interval_no ASC;
+       
