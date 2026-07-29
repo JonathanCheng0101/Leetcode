@@ -1,11 +1,7 @@
-# Write your MySQL query statement below
 WITH t AS(
     SELECT *,
-    DENSE_RANK() OVER(ORDER BY salary DESC) AS rn
+        DENSE_RANK()OVER(ORDER BY salary DESC) AS rn
     FROM Employee
-    )
-
-SELECT (SELECT MAX(salary) 
-        FROM t
-        WHERE rn = 2) AS SecondHighestSalary
-
+)
+SELECT MAX(CASE WHEN rn = 2 THEN salary END) AS SecondHighestSalary
+FROM t
