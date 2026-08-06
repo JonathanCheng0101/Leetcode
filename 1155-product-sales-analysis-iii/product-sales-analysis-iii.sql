@@ -1,8 +1,12 @@
 WITH t AS(
     SELECT *,
-           MIN(`year`)OVER(PARTITION BY product_id) AS min_yr
+        RANK()OVER(PARTITION BY product_id ORDER BY `year` ASC) AS rn
     FROM Sales
 )
-SELECT product_id, `year` AS first_year, quantity, price
+SELECT product_id,
+       `year` AS first_year,
+       SUM(quantity) AS quantity,
+       price
 FROM t
-WHERE min_yr = `year`;
+WHERE rn = 1
+GROUP BY product_id, `year`, price
