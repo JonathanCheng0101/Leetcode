@@ -1,20 +1,24 @@
+# Write your MySQL query statement below
 WITH t AS(
-    SELECT pid, lat, lon
+    SELECT pid
     FROM Insurance
     GROUP BY lat, lon
-    HAVING COUNT(pid) = 1
+    HAVING COUNT(*) = 1
 ), a AS(
-    SELECT pid,
-           COUNT(tiv_2015)OVER(PARTITION BY tiv_2015) AS cnt
-    FROM Insurance
-    
+SELECT pid,
+       COUNT(pid) OVER(PARTITION BY tiv_2015) AS cnt
+FROM Insurance
 )
-SELECT ROUND(SUM(i.tiv_2016), 2) AS tiv_2016
+, b AS(
+    SELECT a.pid
+    FROM a
+    JOIN t
+    ON a.pid = t.pid
+    WHERE a.cnt != 1
+)
+
+SELECT ROUND(SUM(tiv_2016), 2) AS tiv_2016
 FROM Insurance i
-JOIN t
-ON i.pid = t.pid
-JOIN a
-ON i.pid = a.pid AND  a.cnt > 1
-
-
+JOIN b
+ON b.pid = i.pid
 
