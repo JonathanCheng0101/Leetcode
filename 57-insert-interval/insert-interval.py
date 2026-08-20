@@ -1,21 +1,19 @@
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        intervals.append(newInterval)
+        intervals = sorted(intervals, key = lambda x: x[0])
+
         res = []
 
-        intervals.append(newInterval)
-        lst = sorted(intervals, key = lambda x: (x[0], x[1]))
-
-        for ele in lst:
+        for ele in intervals:
             if not res:
                 res.append(ele)
             else:
-                # non overlapping
-                # cur = res[-1]    nxt = ele 
-                if res[-1][1] < ele[0]:
-                    res.append(ele)
-                else:
+                if res[-1][1] >= ele[0]:
                     res[-1][1] = max(res[-1][1], ele[1])
-
+                
+                else:
+                    res.append(ele)
+        
         return res
-
         
