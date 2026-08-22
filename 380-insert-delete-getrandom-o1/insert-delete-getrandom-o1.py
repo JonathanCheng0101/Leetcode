@@ -3,29 +3,37 @@ class RandomizedSet:
 
     def __init__(self):
         self.d = {}
-        self.lst = []
-        
+        self.lst = []        
 
     def insert(self, val: int) -> bool:
-        res = val in self.d
-        if not res:
+        res = val not in self.d
+        if res:
             self.d[val] = len(self.lst)
             self.lst.append(val)
-        
-        return not res        
+
+        return res
 
     def remove(self, val: int) -> bool:
         res = val in self.d
         if res:
-            index = self.d[val]
+            # find index in d
+            ind = self.d[val]
+
+            # find last val
             last_val = self.lst[-1]
-            self.lst[index] = last_val
+
+            # change lst val
+            self.lst[ind] = last_val
+
+            # remove last element in lst
             self.lst.pop()
-            self.d[last_val] = index
+
+            # modify d
+            self.d[last_val] = ind
 
             del self.d[val]
 
-        return res        
+        return res
 
     def getRandom(self) -> int:
         return random.choice(self.lst)
