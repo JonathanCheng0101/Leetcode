@@ -16,24 +16,18 @@ class RandomizedSet:
     def remove(self, val: int) -> bool:
         res = val in self.d
         if res:
-            # find index in d
+            # get index in lst
             ind = self.d[val]
-
-            # find last val
+            # get last_val
             last_val = self.lst[-1]
-
-            # change lst val
+            # 覆蓋 lst
             self.lst[ind] = last_val
-
-            # remove last element in lst
             self.lst.pop()
-
-            # modify d
+            # 更改d
             self.d[last_val] = ind
-
             del self.d[val]
 
-        return res
+        return res        
 
     def getRandom(self) -> int:
         return random.choice(self.lst)
