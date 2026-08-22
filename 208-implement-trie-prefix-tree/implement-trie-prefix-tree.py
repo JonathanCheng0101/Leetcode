@@ -1,36 +1,38 @@
 class Trie:
 
     def __init__(self):
-        self.root = {}   
+        self.trie = {}
+        
 
     def insert(self, word: str) -> None:
-        curr = self.root
-
+        d = self.trie
         for char in word:
-            if char not in curr:
-                curr[char] = {}
+            if char not in d:
+                d[char] = {}
             
-            curr = curr[char]
-        curr["#"] = True
+            d = d[char]
         
-
+        d['.'] = '.'
+        
     def search(self, word: str) -> bool:
-        curr = self.root
-
-        for char in word:
-            if char not in curr:
+        d = self.trie
+        for c in word:
+            if c not in d:
                 return False
-            curr = curr[char]
+            
+            d = d[c]
         
-        return "#" in curr
+        return '.' in d
         
 
     def startsWith(self, prefix: str) -> bool:
-        curr = self.root
-        for char in prefix:
-            if char not in curr:
+        d = self.trie
+        for c in prefix:
+            if c not in d:
                 return False
-            curr = curr[char]
+            
+            d = d[c]
+        
         return True
         
 
