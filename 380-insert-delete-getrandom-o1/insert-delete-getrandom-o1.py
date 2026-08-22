@@ -2,37 +2,33 @@ import random
 class RandomizedSet:
 
     def __init__(self):
-        self.arr = [] #存數字
-        self.pos = {} 
+        self.d = {}
+        self.lst = []
         
 
     def insert(self, val: int) -> bool:
-        if val in self.pos:
-            return False
-        self.pos[val] = len(self.arr)
-        self.arr.append(val)
-        return True
+        res = val in self.d
+        if not res:
+            self.d[val] = len(self.lst)
+            self.lst.append(val)
         
+        return not res        
 
     def remove(self, val: int) -> bool:
-        if val not in self.pos:
-            return False
-        
-        index = self.pos[val]
-        last_val = self.arr[-1]
+        res = val in self.d
+        if res:
+            index = self.d[val]
+            last_val = self.lst[-1]
+            self.lst[index] = last_val
+            self.lst.pop()
+            self.d[last_val] = index
 
-        self.arr[index] = last_val
-        self.pos[last_val] = index
+            del self.d[val]
 
-        # 刪掉最後一格
-        self.arr.pop()
-        del self.pos[val]
-
-        return True
-        
+        return res        
 
     def getRandom(self) -> int:
-        return random.choice(self.arr)
+        return random.choice(self.lst)
         
 
 
