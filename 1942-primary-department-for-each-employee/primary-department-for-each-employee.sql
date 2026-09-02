@@ -1,7 +1,9 @@
 WITH t AS(
-    SELECT *, COUNT(department_id)OVER(PARTITION BY employee_id) AS depart_cnt
+    SELECT *,
+        COUNT(*) OVER(PARTITION BY employee_id) AS cnt
     FROM Employee
 )
-SELECT employee_id, department_id
+SELECT employee_id,
+       department_id
 FROM t
-WHERE depart_cnt = 1 OR primary_flag = 'Y';
+WHERE cnt = 1 OR (cnt != 1 AND primary_flag = 'Y');
