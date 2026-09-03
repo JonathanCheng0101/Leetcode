@@ -1,4 +1,4 @@
-# | user_id | name 
-SELECT user_id, CONCAT(UPPER(SUBSTRING(name, 1,1)), LOWER(SUBSTRING(name, 2)))AS name
+SELECT user_id,
+       CONCAT(SUBSTRING(UPPER(name), 1, 1),SUBSTRING(LOWER(name), 2)) AS name
 FROM Users
-ORDER BY user_id ASC;
+ORDER BY user_id;
