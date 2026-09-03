@@ -1,18 +1,18 @@
 WITH t AS(
-    SELECT visit_id, SUM(amount) AS amount
-    FROM Transactions 
-    GROUP BY visit_id
+    SELECT DISTINCT visit_id
+    FROM Transactions
 ), a AS(
-    SELECT v.customer_id, t.visit_id
+    SELECT visit_id,
+       customer_id
     FROM Visits v
-    LEFT JOIN t
-    ON v.visit_id = t.visit_id
-), b AS(
-    SELECT customer_id, SUM(CASE WHEN visit_id IS NULL THEN 1 ELSE 0 END) AS count_no_trans
-FROM a
-GROUP BY customer_id
-
+    WHERE NOT EXISTS(
+        SELECT 1
+        FROM t
+        WHERE t.visit_id = v.visit_id
+    )
 )
-SELECT *
-FROM b
-WHERE count_no_trans != 0
+
+SELECT customer_id,
+       COUNT(*) AS count_no_trans
+FROM a
+GROUP BY customer_id;
