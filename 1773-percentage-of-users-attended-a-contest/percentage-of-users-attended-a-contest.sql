@@ -1,12 +1,9 @@
 WITH t AS(
-    SELECT COUNT(*) AS user_count
-    FROM Users 
-), a AS(
-    SELECT contest_id, COUNT(DISTINCT user_id) AS contest_cnt
-    FROM Register
-    GROUP BY contest_id
+    SELECT COUNT(*) AS total_cnt
+    FROM Users
 )
-SELECT a.contest_id, ROUND(100*(a.contest_cnt/ t.user_count), 2) AS percentage
-FROM a
+SELECT r.contest_id, ROUND(100 * COUNT(DISTINCT r.user_id)/ t.total_cnt, 2) AS percentage
+FROM Register r
 CROSS JOIN t
-ORDER BY percentage DESC, a.contest_id ASC;
+GROUP BY r.contest_id
+ORDER BY percentage DESC, contest_id ASC;
