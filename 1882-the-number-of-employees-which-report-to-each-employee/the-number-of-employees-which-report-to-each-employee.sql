@@ -1,19 +1,14 @@
+# Write your MySQL query statement below
 WITH t AS(
-    SELECT e1.employee_id,
-           e1.name
-    FROM Employees e1
-    WHERE EXISTS(
-        SELECT 1
-        FROM Employees e2
-        WHERE e1.employee_id = e2.reports_to
-    )
+    SELECT reports_to,
+        COUNT(*) AS reports_count,
+        ROUND(AVG(age)) AS average_age
+    FROM Employees
+    WHERE reports_to IS NOT NULL
+    GROUP BY reports_to
 )
-SELECT t.employee_id,
-       t.name,
-       COUNT(e.reports_to) AS reports_count,
-       ROUND(AVG(e.age)) AS average_age
-FROM t
-JOIN Employees e
-ON t.employee_id = e.reports_to
-GROUP BY t.employee_id, t.name
-ORDER BY t.employee_id ASC; 
+SELECT e.employee_id, e.name, t.reports_count, t.average_age
+FROM Employees e
+JOIN t
+ON e.employee_id = t.reports_to
+ORDER BY e.employee_id ASC;
