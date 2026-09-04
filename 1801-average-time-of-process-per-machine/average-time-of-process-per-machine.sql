@@ -1,10 +1,9 @@
 # Write your MySQL query statement below
 WITH t AS(
-    SELECT *,
-        CASE WHEN activity_type = 'start' THEN -`timestamp` ELSE  `timestamp` END AS time_accu,
-        CASE WHEN activity_type = 'start' THEN 1 ELSE 0 END AS time_chk
+        SELECT machine_id, process_id, SUM(CASE WHEN activity_type = 'end' THEN `timestamp` ELSE -`timestamp` END) AS total
     FROM Activity
+    GROUP BY machine_id, process_id
 )
-SELECT machine_id, ROUND(SUM(time_accu)/ SUM(time_chk), 3) AS processing_time 
+SELECT machine_id, ROUND(SUM(total)/ COUNT(*), 3) AS processing_time
 FROM t
 GROUP BY machine_id;
