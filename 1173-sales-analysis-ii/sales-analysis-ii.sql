@@ -1,16 +1,21 @@
 # Write your MySQL query statement below
-SELECT DISTINCT buyer_id
-FROM Sales s
-WHERE  buyer_id NOT IN(
-    SELECT s.buyer_id
+WITH t AS(
+    SELECT buyer_id
     FROM Sales s
-    LEFT JOIN Product p
+    JOIN Product p
     ON s.product_id = p.product_id
-    WHERE product_name = 'iPhone'
-) AND buyer_id IN(
-    SELECT s.buyer_id
+    WHERE p.product_name = 'S8'
+), a AS(
+    SELECT buyer_id
     FROM Sales s
-    LEFT JOIN Product p
+    JOIN Product p
     ON s.product_id = p.product_id
-    WHERE product_name = 'S8'
-);
+    WHERE p.product_name = 'iPhone'
+)
+SELECT DISTINCT t.buyer_id
+FROM t
+WHERE NOT EXISTS(
+    SELECT 1
+    FROM a
+    WHERE t.buyer_id = a.buyer_id
+)
