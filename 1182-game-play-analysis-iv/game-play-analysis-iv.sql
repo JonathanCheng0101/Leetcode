@@ -1,17 +1,15 @@
-WITH t AS (
-    SELECT COUNT(DISTINCT player_id) AS total_cnt
+WITH t AS(
+    SELECT player_id,
+        event_date,
+        DENSE_RANK()OVER(PARTITION BY player_id ORDER BY event_date ASC) AS rn
     FROM Activity
 ), a AS(
-    SELECT *,
-       LEAD(event_date) OVER(PARTITION BY player_id ORDER BY event_date ASC) AS nxt_date,
-       ROW_NUMBER()OVER(PARTITION BY player_id ORDER BY event_date ASC) AS rn
-    FROM Activity
+    SELECT player_id, CASE WHEN rn = 2 AND DATEDIFF(event_date, LAG(event_date)OVER(PARTITION BY player_id ORDER BY event_date ASC)) = 1 THEN 1 ELSE 0 END AS chk
+    FROM t
 ), b AS(
-    SELECT COUNT(player_id) AS qualified
+    SELECT player_id, SUM(chk) AS chk
     FROM a
-    WHERE  rn = 1 AND DATEDIFF(nxt_date, event_date) = 1
+    GROUP BY player_id
 )
-SELECT ROUND(b.qualified/ t.total_cnt, 2) AS fraction
+SELECT ROUND(SUM(chk)/COUNT(player_id), 2) AS fraction 
 FROM b
-CROSS JOIN t
-
