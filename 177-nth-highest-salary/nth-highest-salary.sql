@@ -6,8 +6,9 @@ BEGIN
                DENSE_RANK()OVER(ORDER BY salary DESC) AS rn
         FROM Employee
     )
-    SELECT MAX(CASE WHEN rn = N THEN salary END)
+    SELECT MAX(salary)
     FROM t
+    WHERE rn = N
     
   );
 END
