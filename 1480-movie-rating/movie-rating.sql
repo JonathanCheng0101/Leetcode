@@ -1,36 +1,18 @@
-WITH t AS(
-    SELECT u.user_id, u.name
-    FROM Users u
-    JOIN MovieRating m
-    ON u.user_id = m.user_id
-), a AS(
-    SELECT name
-    FROM t
-    GROUP BY user_id, name
-    ORDER BY COUNT(user_id) DESC, name ASC
-    LIMIT 1
-)
-, b AS(
-    SELECT mr.movie_id, m.title, mr.rating
-    FROM MovieRating mr
-    JOIN Movies m
-    ON mr.movie_id = m.movie_id
-    WHERE '2020-02-01' <= mr.created_at AND mr.created_at < '2020-03-01'
-), c AS(
-    SELECT *,
-       AVG(rating)OVER(PARTITION BY movie_id) AS avg_rating
-    FROM b
-), d AS(
-    SELECT title
-    FROM c
-    ORDER BY avg_rating DESC, title ASC
-    LIMIT 1
-)
-SELECT name AS results
-FROM a
-UNION ALL 
-SELECT title AS results
-FROM d
+(SELECT u.name AS results
+FROM Users u
+JOIN MovieRating mr
+ON u.user_id = mr.user_id
+GROUP BY mr.user_id
+ORDER BY COUNT(mr.user_id) DESC, u.name ASC
+LIMIT 1)
 
+UNION ALL
 
-
+(SELECT m.title AS results
+FROM Movies m
+JOIN MovieRating mr
+ON m.movie_id = mr.movie_id
+WHERE created_at BETWEEN '2020-02-01' AND '2020-02-29'
+GROUP BY mr.movie_id
+ORDER BY AVG(rating) DESC, m.title ASC
+LIMIT 1);
