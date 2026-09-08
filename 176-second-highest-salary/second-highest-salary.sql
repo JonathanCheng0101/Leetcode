@@ -1,8 +1,6 @@
-WITH t AS(
-    SELECT *,
-        DENSE_RANK()OVER(ORDER BY salary DESC) AS rn
+SELECT MAX(salary) AS SecondHighestSalary 
+FROM Employee
+WHERE salary < (
+    SELECT MAX(salary)
     FROM Employee
 )
-SELECT MAX(salary) AS SecondHighestSalary
-FROM t
-WHERE rn = 2
