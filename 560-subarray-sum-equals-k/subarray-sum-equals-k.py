@@ -1,19 +1,23 @@
-
-from collections import defaultdict 
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
-        d = defaultdict(list) # prefix:[index]
-        d[0].append(-1)
-
         res = 0
-        prefix = 0
+        total = 0
+        prefix = {0:1} # sum: 次數
 
-        for i, num in enumerate(nums):
-            prefix += num
-            need = prefix - k
-            if need in d:
-                res += len(d[need])
+        for num in nums:
+            total += num
 
-            d[prefix].append(i)
+            if total - k in prefix:
+                res += prefix[total - k]
+            
+            if total in prefix:
+                prefix[total] += 1
+            else:
+                prefix[total] = 1
         
         return res
+
+            
+
+
+        
