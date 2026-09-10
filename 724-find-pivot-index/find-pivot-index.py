@@ -1,18 +1,18 @@
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
-        d = {0: -1} # prefix: index
-        sum_total = sum(nums)
+        total = sum(nums)
         prefix = 0
-
+        d = {0: -1} # prefix: index
         for i, num in enumerate(nums):
-            back = sum_total - prefix - num 
-            if back == prefix:
+            target = total - num - prefix
+            if target == prefix:
                 return i
-            
-            prefix += num
-            d[prefix] = i
+            else:
+                prefix += num
         
         return -1
+
+            
 
 
         
