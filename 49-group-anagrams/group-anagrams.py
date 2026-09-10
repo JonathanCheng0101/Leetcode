@@ -1,14 +1,17 @@
-from collections import Counter, defaultdict
-
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        res = defaultdict(list)
+        d = {}
         for word in strs:
-            cur = "".join(sorted(word))
-            res[cur].append(word)
-            print(cur)
+            word_key = ''.join(sorted(word))
+            print(word_key)
+            if word_key not in d:
+                d[word_key] = [word]
+            else:
+                d[word_key].append(word)
+
         
-        return(list(res.values()))
+        return list(d.values())
+       
 
 
     
