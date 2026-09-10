@@ -4,7 +4,7 @@ WITH t AS(
     WHERE EXISTS(
         SELECT 1
         FROM Company c
-        WHERE o.com_id = c.com_id AND c.name = 'RED'
+        WHERE c.name = 'RED' AND c.com_id = o.com_id
     )
 )
 SELECT s.name
