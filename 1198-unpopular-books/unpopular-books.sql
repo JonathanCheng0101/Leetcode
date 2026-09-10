@@ -2,20 +2,15 @@ WITH t AS(
     SELECT book_id,
         name
     FROM Books
-    WHERE available_from <= DATE_SUB('2019-06-23', INTERVAL 30 DAY)
+    WHERE available_from <= DATE_SUB('2019-06-23', INTERVAL 29 DAY)
 ), a AS(
-    SELECT book_id,
-       SUM(quantity) AS quantity
+    SELECT book_id, SUM(quantity) AS quantity
     FROM Orders
-    WHERE dispatch_date >= DATE_SUB('2019-06-23', INTERVAL 365 DAY) AND dispatch_date <= '2019-06-23'
+    WHERE dispatch_date BETWEEN DATE_SUB('2019-06-23', INTERVAL 364 DAY) AND '2019-06-23'
     GROUP BY book_id
-), b AS(
-    SELECT t.book_id, t.name, IFNULL(a.quantity, 0) AS quantity
-    FROM t
-    LEFT JOIN a
-    ON t.book_id = a.book_id
 )
-SELECT book_id,
-       name
-FROM b
-WHERE quantity < 10;
+SELECT t.book_id, t.name
+FROM t
+LEFT JOIN a
+ON t.book_id = a.book_id
+WHERE IFNULL(a.quantity, 0) < 10;
